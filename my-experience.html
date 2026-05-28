@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Setup Experience With VirtualBox/WSL2</title>
+    <style>
+        body {
+            color: navy;
+            background-color: aqua;
+            text-align: center;
+        }
+        h1, h2 {
+            text-shadow: 1px 1px 0 black,
+                        -1px -1px 0 black,
+                        1px -1px 0 black,
+                        -1px 1px 0 black;
+            color: whitesmoke;
+            background-color: yellow;
+        }
+        p {
+            text-align: left;
+        }
+        footer {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Experience With VirtualBox and Why I Recommend Trying WSL2</h1>
+    </header>
+    <main>
+        <h2>Why the web page?</h2>
+        <p>Hi guys! I'm new to The Odin Project and to Discord in general, so I didn't realize there was a character limit. 
+        I wanted to share my experience regardless in case it's helpful for anyone else, so I decided to make this little page 
+        that I can link without clogging up the feed. It also gives me a reason to practice "pushing" my files to <a href="https://www.github.com/YapTrapp">my Github!</a></p>
+        <h2>Why I Chose VirtualBox</h2>
+        <p>I initially chose to use a VM because after reading through the options (VM, dual booting, or WSL2) VirtualBox sounded 
+            the least intimidating and most approachable to me. I was able to follow along with the <a href="https://www.theodinproject.com/lessons/foundations-installations">installations lesson</a> without 
+            any major hang ups or issues due to the excellent instructions provided by TOP, and I felt very accomplished and proud
+            of myself the first time I opened up Firefox inside of my VM.</p>
+        <h2>The Windows Woes</h2>
+        <p>The night I successfully created my VM, I went to bed self satisfied and absolutely <em>bursting</em> with enthusiasm and 
+            determination. "I've got <a href="https://www.theodinproject.com/lessons/foundations-motivation-and-mindset">grit</a>." I thought to myself, "There's no way I'm going to give up."</p>
+        <p>The next day, Windows updated.</p>
+        <p>At the same time, I was working on following the <a href="https://forums.virtualbox.org/viewtopic.php?f=25&t=99390">guide</a> to disable Hyper V. (&#x1F422) When I went to initialize my new, 
+            exciting VM, the initialization was aborted. I checked the log and couldn't identify any obvious errors (although that 
+            may be due to me lacking the ability to spot the error), so I began googling. First, I tried undoing everything I had just 
+            done to disable Hyper V with the thought that I must have accidentally messed something up in the process of attempting to 
+            disable it. Disregarding my virtualization settings, I was still getting the error and my VM was failing to initialize, so I 
+            asked <a href="https://www.claude.ai/login">Claude</a> for ideas and Claude directed me to install the <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox extension pack</a>. That also didn't work, and I began getting 
+            a new USB proxy service error alongside failing to initialize. I checked the log again and I still wasn't seeing anything that I 
+            could identify as wrong, so I got frustrated and gave up for approximately two weeks.</p>
+        <h2>Discovering WSL2</h2>
+        <p>Once I finished sulking over the unfairness of it all, I went back to the installations lesson and read through my options again. I 
+            was nervous to try dual booting or WSL2 because it seemed like those options were above my head and I wasn't confident in my abilities
+            to succeed. Once I made the decision to try WSL2, I was able to get my working environment up and running within minutes. So far, WSL2 
+            has been intuitive and frictionless, and I've been able to dedicate my time to learning rather than troubleshooting.</p>
+        <h2>Failing Forward</h2>
+        <p>There's a concept I learned about in a class once that's been reverberating around my skull since learning about "grit."</p>
+        <p>It's called <a href="https://www.google.com/search?q=failing+forward+john+c+maxwell">Failing Forward</a>, by John C. Maxwell. The concept is essentially the mindset of seeing failure as an opportunity
+            for growth rather than frustration or disappointment. While I did fail to get VirtualBox working in the end, I learned a lot about 
+            Hyper V, virtualization software, and kernel drivers in the process of failing that I otherwise wouldn't have learned. Thus, failing 
+            forward.</p>
+        <p><em>However</em>, my ability to retroactively reflect and appreciate my failures does not negate my two week rage quit. My goal in creating
+            this page is as practice for myself yes, but I also really want to encourage anyone having trouble with VirtualBox to try WSL2 before 
+            giving up. It might not click for everyone, but that doesn't mean it won't click for <em>you</em>. There's a reason why you're here, 
+            why you're trying to do this. If you believe that it's too hard or that you aren't smart enough to learn, I'm writing this for you. Fail 
+            forward.</p>
+    </main>
+    <footer>
+        Back to <a href="https://theodinproject.com">The Odin Project</a>
+    </footer>
+</body>
+</html>
