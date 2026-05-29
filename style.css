@@ -1,6 +1,11 @@
 body {
-    background-color: gainsboro;
-    font-size: large;
+    background-color: #D0D6E0;
+    font-size: 18px;
+}
+
+header {
+    background-color: skyblue;
+    padding: 5px;
 }
 
 h1, h2 {
@@ -26,4 +31,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
 }
